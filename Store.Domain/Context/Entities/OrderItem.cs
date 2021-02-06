@@ -1,6 +1,3 @@
-using FluentValidator;
-using System.Collections;
-using System.Collections.Generic;
 using Store.Shared.Entities;
 
 namespace Store.Domain.Context.Entities

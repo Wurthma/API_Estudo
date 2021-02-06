@@ -1,5 +1,4 @@
 using Store.Shared.Entities;
-using FluentValidator;
 
 namespace Store.Domain.Context.Entities
 {

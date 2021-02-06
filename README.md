@@ -12,3 +12,12 @@ Exemplo de API com ASP.NET 5, Dapper, Cache, padrão REST, CQRS, Testes unitári
 
 ## Exemplos importantes
 
+- No [Customer.cs](/Store.Domain/Context/Entities/Customer.cs "Customer.cs") podemos observar na prática o uso do conceito de **domínio rico**. Nessa classe algumas propriedades (Name, Document e Email) que são comumente usadas apenas com tipos primitivos, nesse caso possuem Value Objects específicos para definir as regras que envolvem essas propriedades.
+
+## Conceitos e ferramentas utilizadas
+
+- Princípios do SOLID
+- Domínio rico
+- Micro ORM Dapper
+- FluentValidation
+

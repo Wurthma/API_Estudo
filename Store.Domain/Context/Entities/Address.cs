@@ -1,6 +1,5 @@
 using Store.Domain.Context.Enums;
 using Store.Shared.Entities;
-using FluentValidator;
 
 namespace Store.Domain.Context.Entities
 {

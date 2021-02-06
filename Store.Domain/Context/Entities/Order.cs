@@ -1,5 +1,4 @@
 using Store.Domain.Context.Enums;
-using FluentValidator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
