@@ -10,7 +10,7 @@ namespace BaltaStore.Tests
         public void ShouldReturnNotificationWhenNameIsNotValid()
         {
             var name = new Name("", "Baltieri");
-            Assert.Equal(false, name.IsValid);
+            Assert.False(name.Valid);
             Assert.Equal(1, name.Notifications.Count);
         }
     }
