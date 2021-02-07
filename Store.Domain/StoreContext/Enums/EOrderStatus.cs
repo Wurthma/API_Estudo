@@ -1,4 +1,4 @@
-namespace Store.Domain.Context.Enums
+namespace Store.Domain.StoreContext.Enums
 {
     public enum EOrderStatus
     {

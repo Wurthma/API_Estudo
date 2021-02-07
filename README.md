@@ -17,7 +17,9 @@ Exemplo de API com ASP.NET 5, Dapper, Cache, padrão REST, CQRS, Testes unitári
 ## Conceitos e ferramentas utilizadas
 
 - Princípios do SOLID
+- Domain-Driven Design (DDD)
+    - ![Representação básica do DDD](/.imgs/representacao_basica_ddd.PNG)
 - Domínio rico
 - Micro ORM Dapper
-- FluentValidation
+- FluentValidator
 

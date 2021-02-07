@@ -1,9 +1,9 @@
-using Store.Domain.Context.ValueObjects;
+using Store.Domain.StoreContext.ValueObjects;
 using System.Collections.Generic;
 using System.Linq;
 using Store.Shared.Entities;
 
-namespace Store.Domain.Context.Entities
+namespace Store.Domain.StoreContext.Entities
 {
     public class Customer : Entity
     {

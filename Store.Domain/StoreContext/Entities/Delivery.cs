@@ -1,8 +1,8 @@
-using Store.Domain.Context.Enums;
+using Store.Domain.StoreContext.Enums;
 using System;
 using Store.Shared.Entities;
 
-namespace Store.Domain.Context.Entities
+namespace Store.Domain.StoreContext.Entities
 {
     public class Delivery : Entity
     {

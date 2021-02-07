@@ -1,10 +1,10 @@
-using Store.Domain.Context.Enums;
+using Store.Domain.StoreContext.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Store.Shared.Entities;
 
-namespace Store.Domain.Context.Entities
+namespace Store.Domain.StoreContext.Entities
 {
     public class Order : Entity
     {
@@ -39,7 +39,7 @@ namespace Store.Domain.Context.Entities
         // Criar um pedido
         public void Place()
         {
-            // Gera o n�mero do pedido
+            // Gera o número do pedido
             Number = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8).ToUpper();
             if (_items.Count == 0)
                 AddNotification("Order", "Este pedido não possui itens");
@@ -54,7 +54,7 @@ namespace Store.Domain.Context.Entities
         // Enviar um pedido
         public void Ship()
         {
-            // A cada 5 produtos � uma entrega
+            // A cada 5 produtos é uma entrega
             var deliveries = new List<Delivery>();
             // deliveries.Add(new Delivery(DateTime.Now.AddDays(5)));
             var count = 1;

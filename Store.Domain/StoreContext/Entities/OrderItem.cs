@@ -1,6 +1,6 @@
 using Store.Shared.Entities;
 
-namespace Store.Domain.Context.Entities
+namespace Store.Domain.StoreContext.Entities
 {
     public class OrderItem : Entity
     {
