@@ -3,7 +3,7 @@ using Store.Domain.StoreContext.Enums;
 using Store.Domain.StoreContext.ValueObjects;
 using Xunit;
 
-namespace BaltaStore.Tests
+namespace Store.Tests
 {
     public class OrderTests
     {
@@ -17,9 +17,9 @@ namespace BaltaStore.Tests
         public OrderTests()
         {
             // Recupera os produtos do banco
-            var name = new Name("André", "Baltieri");
+            var name = new Name("George", "Wurthmann");
             var document = new Document("46718115533");
-            var email = new Email("hello@balta.io");
+            var email = new Email("hello@email.com");
             _customer = new Customer(name, document, email, "551999876542");
             _order = new Order(_customer);
 

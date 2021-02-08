@@ -1,7 +1,7 @@
 using Store.Domain.StoreContext.ValueObjects;
 using Xunit;
 
-namespace BaltaStore.Tests
+namespace Store.Tests
 {
     public class DocumentTests
     {
