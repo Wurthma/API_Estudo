@@ -23,10 +23,7 @@ namespace Store.Api.Controllers
         [HttpGet]
         [Route("v1/customers")]
         [ResponseCache(Duration = 15)]
-        public IEnumerable<ListCustomerQueryResult> Get()
-        {
-            return _repository.Get();
-        }
+        public IEnumerable<ListCustomerQueryResult> Get() => _repository.Get();
 
         [HttpGet]
         [Route("v1/customers/{id}")]
