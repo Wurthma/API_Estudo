@@ -33,6 +33,26 @@ Exemplo de API com ASP.NET 5, Dapper, Cache, padrão REST, CQRS, Testes unitári
     public IEnumerable<ListCustomerQueryResult> Get() => _repository.Get();
     ```
 
+- Trabalhando com diferentes ambientes usando o **appsettings.json**: no exemplo do projeto estamos usando dois ambientes (enviroments) production e development. Para trabalhar com esses dois ambientes foram criados dois arquivos de configurações separados:
+    - **appsettings.json**: Arquivo padrão com as configurações de *Production*
+    - **appsettings.Development.json**: Arquivo de ambiente alternativo com as configurações de *Development*
+    - Para o funcionamento correto é necessário que exista um arquivo **Properties/launchSettings.json** com os diferentes ambientes configurados no profiles (no VS Code o arquivo **.vscode/launch.json** que tem os profiles configurados). Exemplo:
+    ```json
+    "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+    }
+    ```
+    - No [Startup.cs](/Store.Api/Startup.cs "Startup.cs") o trecho abaixo foi utilizado para configurar de qual appsettings as configurações serão buscadas:
+    ```csharp
+    var builder = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+
+    Configuration = builder.Build();
+    ```
+    -Para mais detalhes verificar a documentação: https://docs.microsoft.com/pt-br/aspnet/core/fundamentals/environments?view=aspnetcore-5.0
+
 ## Conceitos e ferramentas utilizadas
 
 - Princípios do SOLID
@@ -43,4 +63,5 @@ Exemplo de API com ASP.NET 5, Dapper, Cache, padrão REST, CQRS, Testes unitári
 - FluentValidator
 - Cache
 - Compression (Microsoft.AspNetCore.ResponseCompression)
-
+- ELMAH para log de erros
+- Uso de **Secrets** para armazenar dados sensíveis (https://docs.microsoft.com/pt-br/aspnet/core/security/app-secrets?view=aspnetcore-5.0&tabs=windows)
