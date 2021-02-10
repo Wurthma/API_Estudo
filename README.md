@@ -65,3 +65,4 @@ Exemplo de API com ASP.NET 5, Dapper, Cache, padrão REST, CQRS, Testes unitári
 - Compression (Microsoft.AspNetCore.ResponseCompression)
 - ELMAH para log de erros
 - Uso de **Secrets** para armazenar dados sensíveis (https://docs.microsoft.com/pt-br/aspnet/core/security/app-secrets?view=aspnetcore-5.0&tabs=windows)
+    - Consultar também o uso de secrets no azure: https://docs.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops
