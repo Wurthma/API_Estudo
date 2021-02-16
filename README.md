@@ -1,6 +1,6 @@
 # Store API
 
-Exemplo de API com ASP.NET 5, Dapper, Cache, padrão REST, CQRS, Testes unitários, Logs com ELMAH, Swagger, etc.
+Exemplo de API com ASP.NET 5, Dapper, cache, padrão REST, CQRS, testes unitários, logs com ELMAH, swagger, etc.
 
 ## Estrutura do projeto
 
